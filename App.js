@@ -1,5 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import Welcome from './components/Welcome';
 
 export default function App() {
   const names = ["Anshuman","Jatin","Jai"];
@@ -8,20 +9,15 @@ export default function App() {
       <Text> Hello, there ! </Text>
       <Text>Welcome to your first mobile app.</Text>
       <StatusBar style="auto" />
-      {names.map((name) => (
+
+      {/* {names.map((name) => (
         <Welcome name={name} />
-      ))}
+      ))} */}
       
     </View>
 
   );
 }
-
-const Welcome = (props) => (
-  <View>
-    <Text>Hey there, {props.name} !</Text>
-  </View>
-);
 
 const styles = StyleSheet.create({
   container: {
